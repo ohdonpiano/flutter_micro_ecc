@@ -1,8 +1,5 @@
-group 'swanav.flutter_micro_ecc'
-version '1.0-SNAPSHOT'
-
 buildscript {
-    ext.kotlin_version = '1.3.50'
+    ext.kotlin_version = '1.7.10'
     repositories {
         google()
         mavenCentral()
@@ -25,6 +22,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace "kotlin.swanav.flutter_micro_ecc"
     compileSdkVersion 30
 
     compileOptions {
@@ -41,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
     }
 
     externalNativeBuild {
