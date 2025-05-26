@@ -1,3 +1,5 @@
+//file:noinspection GrPackage
+
 buildscript {
     ext.kotlin_version = '1.7.10'
     repositories {
@@ -23,7 +25,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace "kotlin.swanav.flutter_micro_ecc"
-    compileSdkVersion 30
+    compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -39,6 +41,7 @@ android {
     }
 
     defaultConfig {
+        targetSdkVersion 34
         minSdkVersion 21
     }
 

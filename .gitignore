@@ -13,3 +13,4 @@ doc/api/**
 
 windows
 linux
+/example/android/.kotlin
