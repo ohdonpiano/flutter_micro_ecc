@@ -1,3 +1,9 @@
+## 0.0.6
+
+* Add support for 16 KB page size in native libraries (required by Google Play Store 2025).
+* Fix linker flags to ensure compatibility with modern Android devices.
+* Updated CMake configuration to include `-Wl,-z,max-page-size=16384` flag.
+
 ## 0.0.2+1
 
 * Fix an issue where the iOS plugin could not be imported in other projects.
